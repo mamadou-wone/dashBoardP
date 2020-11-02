@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
     <script src="https://kit.fontawesome.com/91c5fc95dd.js" crossorigin="anonymous"></script>
     <title>Table</title>
 
@@ -146,8 +148,8 @@
                                         </tr>
                                     </thead>
 
-                                    <tbody>
-                                        <tr id="product">
+                                    <tbody id="product">
+                                        <tr>
                                             <td id="name">vegetable salad</td>
                                             <td id="price">1500 FCFA</td>
                                             <td><a href="#" _ngcontent-gty-c9="" class="btn btn-sm btn-default" type="button"><em _ngcontent-gty-c9="" class="fa fa-eye"></em></a></td>
@@ -189,6 +191,22 @@
     </div>
 
     <script src="/script/add.js"></script>
+
+    <!-- <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB8Nrcg0Pqz1zUDMJ44YztQ9Fgn-0yBRoE",
+            authDomain: "resto-7e779.firebaseapp.com",
+            databaseURL: "https://resto-7e779.firebaseio.com",
+            projectId: "resto-7e779",
+            storageBucket: "resto-7e779.appspot.com",
+            messagingSenderId: "959213582091",
+            appId: "1:959213582091:web:c355a806078099d349d40e"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const restoRef = firebase.firestore().collection('resto');
+    </script> -->
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

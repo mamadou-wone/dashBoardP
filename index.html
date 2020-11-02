@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -136,6 +137,22 @@
         <!-- End of Content Wrapper -->
 
     </div>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB8Nrcg0Pqz1zUDMJ44YztQ9Fgn-0yBRoE",
+            authDomain: "resto-7e779.firebaseapp.com",
+            databaseURL: "https://resto-7e779.firebaseio.com",
+            projectId: "resto-7e779",
+            storageBucket: "resto-7e779.appspot.com",
+            messagingSenderId: "959213582091",
+            appId: "1:959213582091:web:c355a806078099d349d40e"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const booksRef = firebase.firestore().collection('books');
+    </script>
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -143,7 +160,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-
+    <script src="/script/add.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -155,11 +172,11 @@
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <!-- <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script> -->
 
 </body>
 
