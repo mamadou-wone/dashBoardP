@@ -27,8 +27,8 @@ restoRef
             td4.innerHTML = `<a href="editProduct.html" _ngcontent-gty-c9="" class="btn btn-sm btn-primary" type="submit"><em _ngcontent-gty-c9="" class="fa fa-pencil"></em></a>`;
             let td5 = document.createElement('td');
             td5.innerHTML = `<button _ngcontent-gty-c9="" id="deleteButton" class="btn btn-sm btn-danger" type="submit"  data-toggle="modal" data-target="#exampleModal"><em _ngcontent-gty-c9="" class="fa fa-trash-o" ></em></button>`;
-            td.innerText = doc.data().Title;
-            td2.innerText = doc.data().Price + ' CFA';
+            td.innerText = doc.data().name;
+            td2.innerText = doc.data().price + ' CFA';
             tr.append(td, td2, td3, td4, td5);
             tbody.append(tr);
             // td3.addEventListener('click', () => {
