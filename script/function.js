@@ -12,7 +12,7 @@ var firebaseConfig = {
     projectId: "resto-7e779",
     storageBucket: "resto-7e779.appspot.com",
     messagingSenderId: "959213582091",
-    appId: "1:959213582091:web:c355a806078099d349d40e"
+    appId: "1:959213582091:web:ba632c83346f97d449d40e"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -31,14 +31,14 @@ function addProduct(name, price, category, description) {
     const metadata = {
         contentType: firstImage.type
     };
-    const task = ref.child(firstImageName).put(firstImage, metadata);
+    const task = ref.child("img1/" + firstImageName).put(firstImage, metadata);
 
     const secoundImage = document.querySelector('#secondImage').files[0];
     const secoundImageName = (+new Date()) + '-' + secoundImage.name;
     const metadata2 = {
         contentType: secoundImage.type
     };
-    const task2 = ref.child(secoundImageName).put(secoundImage, metadata2);
+    const task2 = ref.child("img2/" + secoundImageName).put(secoundImage, metadata2);
     let url1;
     let url2;
     task
