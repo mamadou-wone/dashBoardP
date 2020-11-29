@@ -5,19 +5,30 @@ let productCategorie = document.querySelector('#select');
 let firstImage = document.querySelector('#firstImage');
 let secondImage = document.querySelector('#secondImage');
 let productDescription = document.querySelector('#description');
+// Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyB8Nrcg0Pqz1zUDMJ44YztQ9Fgn-0yBRoE",
-    authDomain: "resto-7e779.firebaseapp.com",
-    databaseURL: "https://resto-7e779.firebaseio.com",
-    projectId: "resto-7e779",
-    storageBucket: "resto-7e779.appspot.com",
-    messagingSenderId: "959213582091",
-    appId: "1:959213582091:web:ba632c83346f97d449d40e"
+    apiKey: "AIzaSyAwrq31O5HTiAitdZOmVRcEhosipAyoGOE",
+    authDomain: "my-resto-app-4679a.firebaseapp.com",
+    databaseURL: "https://my-resto-app-4679a.firebaseio.com",
+    projectId: "my-resto-app-4679a",
+    storageBucket: "my-resto-app-4679a.appspot.com",
+    messagingSenderId: "680485121633",
+    appId: "1:680485121633:web:9359cac376a38d8bffc420"
 };
+// const db = firebase.firestore();
+// const restoRef = firebase.firestore().collection('test');
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const restoRef = firebase.firestore().collection('resto');
+// restoRef
+//     .get()
+//     .then((snapshot) => {
+//         snapshot.docs.forEach(doc => {
+//             console.log(doc.data());
+//         })
+//     })
 formData.addEventListener('submit', (e) => {
     e.preventDefault();
     addProduct(productName.value, productPrice.value, productCategorie.value, productDescription.value);
@@ -57,7 +68,7 @@ function addProduct(name, price, category, description) {
                         firstImage: url1,
                         secondImage: url2
                     }).then(() => {
-                        console.log('data saved');
+                        alert("Data Saved !");
                     });
                 })
         });

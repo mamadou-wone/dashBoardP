@@ -24,7 +24,9 @@
 </head>
 
 <body id="page-top">
-
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -236,20 +238,6 @@
         <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-        <script>
-            // Your web app's Firebase configuration
-            var firebaseConfig = {
-                apiKey: "AIzaSyB8Nrcg0Pqz1zUDMJ44YztQ9Fgn-0yBRoE",
-                authDomain: "resto-7e779.firebaseapp.com",
-                databaseURL: "https://resto-7e779.firebaseio.com",
-                projectId: "resto-7e779",
-                storageBucket: "resto-7e779.appspot.com",
-                messagingSenderId: "959213582091",
-                appId: "1:959213582091:web:850ed99dffabc13749d40e"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-        </script>
 
         <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
@@ -261,7 +249,7 @@
         <!-- Custom scripts for all pages-->
         <script src="js/sb-admin-2.min.js"></script>
 
-        <!-- <script src="/script/function.js"></script> -->
+        <script src="/script/function.js"></script>
 </body>
 
 </html>
