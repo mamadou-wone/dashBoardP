@@ -90,7 +90,7 @@ modal.innerHTML = `<div class="modal fade" id="exampleModal" tabindex="-1" role=
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" id ='confDelete'>Save danger</button>
+            <button type="button" class="btn btn-outline-danger" id ='confDelete'>Delete</button>
         </div>
     </div>
 </div>
@@ -112,7 +112,7 @@ modalView.innerHTML = `<div class="modal fade" id="exampleModal2" tabindex="-1" 
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline-danger" id =''>Delete</button>
+            <button type="button" class="btn btn-primary" id =''>Delete</button>
         </div>
     </div>
 </div>
