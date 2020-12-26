@@ -5,7 +5,7 @@ let productCategorie = document.querySelector('#select');
 let firstImage = document.querySelector('#firstImage');
 let secondImage = document.querySelector('#secondImage');
 let productDescription = document.querySelector('#description');
-// Your web app's Firebase configuration
+
 var firebaseConfig = {
     apiKey: "AIzaSyAwrq31O5HTiAitdZOmVRcEhosipAyoGOE",
     authDomain: "my-resto-app-4679a.firebaseapp.com",
